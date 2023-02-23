@@ -3,9 +3,9 @@
 GPT AI Assistant is an application that is implemented using the OpenAI API and LINE Messaging API. Through the installation process, you can start chatting with your own AI assistant using the LINE mobile app.
 
 <div align="center">
-  <img src="/images/screenshot-en-1.png" width="300"/>
+  <img :src="withBase('/images/screenshot-en-1.png')" width="300"/>
   &nbsp;
-  <img src="/images/screenshot-en-2.png" width="300"/>
+  <img :src="withBase('/images/screenshot-en-2.png')" width="300"/>
 </div>
 
 ## Table of Contents
@@ -23,11 +23,11 @@ GPT AI Assistant is an application that is implemented using the OpenAI API and 
 ## Installation
 
 - Log in to the [OpenAI](https://beta.openai.com/) website.
-  - Generate an OpenAI <a href="/images/openai-api-key.png" target="_blank">API key</a>.
+  - Generate an OpenAI <a :href="withBase('/images/openai-api-key.png')" target="_blank">API key</a>.
 - Log in to the [LINE](https://developers.line.biz/en/) website.
   - Add a provider (e.g. "My Provider").
   - Create a channel (e.g. "My AI Assistant") of type Messaging API.
-  - Click the "Messaging API" tab and generate a <a href="/images/line-channel-access-token.png" target="_blank">channel access token</a>.
+  - Click the "Messaging API" tab and generate a <a :href="withBase('/images/line-channel-access-token.png')" target="_blank">channel access token</a>.
 - Log in to the [GitHub](https://github.com/) website.
   - Go to the `gpt-ai-assistant` project.
   - Click the "Star" button to support this project and the developer.
@@ -36,9 +36,9 @@ GPT AI Assistant is an application that is implemented using the OpenAI API and 
   - Click the "Create a New Project" button to create a new project.
   - Click the "Import" button to import the `gpt-ai-assistant` project.
   - Click the "Environment Variables" tab and add the following environment variables with their corresponding values:
-    - `OPENAI_API_KEY` with the OpenAI <a href="/images/openai-api-key.png" target="_blank">API key</a>.
-    - `LINE_CHANNEL_ACCESS_TOKEN` with the LINE <a href="/images/line-channel-access-token.png" target="_blank">channel access token</a>.
-    - `LINE_CHANNEL_SECRET` with the LINE <a href="/images/line-channel-secret.png" target="_blank">channel secret</a>.
+    - `OPENAI_API_KEY` with the OpenAI <a :href="withBase('/images/openai-api-key.png')" target="_blank">API key</a>.
+    - `LINE_CHANNEL_ACCESS_TOKEN` with the LINE <a :href="withBase('/images/line-channel-access-token.png')" target="_blank">channel access token</a>.
+    - `LINE_CHANNEL_SECRET` with the LINE <a :href="withBase('/images/line-channel-secret.png')" target="_blank">channel secret</a>.
     - `APP_LANG` with `en`.
   - Click the "Deploy" button and wait for the deployment to complete.
   - Go to the dashboard, copy the application URL, e.g. "<https://gpt-ai-assistant.vercel.app/>".
@@ -58,7 +58,7 @@ On your own `gpt-ai-assistant` project page, you can click on the "Sync fork" me
 When the Vercel bot detects a change in the code, it will automatically redeploy.
 
 <div align="center">
-  <img src="/images/github-sync-fork.png" width="600"/>
+  <img :src="withBase('/images/github-sync-fork.png')" width="600"/>
 </div>
 
 ## Commands
@@ -144,10 +144,10 @@ Name | Default Value | Description
 `ERROR_TIMEOUT_DISABLED` | `false` | Disable timeout error. The value must be `true` of `false`.
 `VERCEL_TIMEOUT` | 9000 | Timeout for Vercel API calls.
 `VERCEL_PROJECT_NAME` | `gpt-ai-assistant` | Custom Vercel project name. You can use this environment variable when the Vercel project name differs from the GitHub project name.
-`VERCEL_ACCESS_TOKEN` | `null` | Vercel <a href="/images/vercel-access-token.png" target="_blank">access token</a>
-`VERCEL_DEPLOY_HOOK_URL` | `null` | Vercel <a href="/images/vercel-deploy-hook-url.png" target="_blank">deploy hook URL</a>
+`VERCEL_ACCESS_TOKEN` | `null` | Vercel <a :href="withBase('/images/vercel-access-token.png')" target="_blank">access token</a>
+`VERCEL_DEPLOY_HOOK_URL` | `null` | Vercel <a :href="withBase('/images/vercel-deploy-hook-url.png')" target="_blank">deploy hook URL</a>
 `OPENAI_TIMEOUT` | 9000 | Timeout for OpenAI API calls.
-`OPENAI_API_KEY` | `null` | OpenAI <a href="/images/openai-api-key.png" target="_blank">API key</a>
+`OPENAI_API_KEY` | `null` | OpenAI <a :href="withBase('/images/openai-api-key.png')" target="_blank">API key</a>
 `OPENAI_COMPLETION_MODEL` | `text-davinci-003` | Refer to [model](https://beta.openai.com/docs/api-reference/completions/create#completions/create-model) parameter for details.
 `OPENAI_COMPLETION_TEMPERATURE` | `0.9` | Refer to [temperature](https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature) parameter for details.
 `OPENAI_COMPLETION_MAX_TOKENS` | `160` | Refer to [max_tokens](https://beta.openai.com/docs/api-reference/completions/create#completions/create-max_tokens) parameter for details.
@@ -155,9 +155,9 @@ Name | Default Value | Description
 `OPENAI_COMPLETION_PRESENCE_PENALTY` | `0.6` | Refer to [presence_penalty](https://beta.openai.com/docs/api-reference/completions/create#completions/create-presence_penalty) parameter for details.
 `OPENAI_IMAGE_GENERATION_SIZE` | `256x256` | Refer to [size](https://beta.openai.com/docs/api-reference/images/create#images/create-size) parameter for details.
 `LINE_TIMEOUT` | 9000 | Timeout for LINE Messaging API calls.
-`LINE_CHANNEL_ACCESS_TOKEN` | `null` | LINE <a href="/images/line-channel-access-token.png" target="_blank">channel access token</a>
-`LINE_CHANNEL_SECRET` | `null` | LINE <a href="/images/line-channel-secret.png" target="_blank">channel secret</a>
-`SERPAPI_API_KEY` | `null` | SerpApi <a href="/images/serpapi-api-key.png" target="_blank">API key</a>
+`LINE_CHANNEL_ACCESS_TOKEN` | `null` | LINE <a :href="withBase('/images/line-channel-access-token.png')" target="_blank">channel access token</a>
+`LINE_CHANNEL_SECRET` | `null` | LINE <a :href="withBase('/images/line-channel-secret.png')" target="_blank">channel secret</a>
+`SERPAPI_API_KEY` | `null` | SerpApi <a :href="withBase('/images/serpapi-api-key.png')" target="_blank">API key</a>
 
 Click the "Redeploy" button to redeploy if there are any changes.
 
@@ -319,3 +319,7 @@ Detailed changes for each release are documented in the [release notes](https://
 ## License
 
 [MIT](https://github.com/memochou1993/gpt-ai-assistant/blob/main/LICENSE)
+
+<script setup>
+import { withBase } from '@vuepress/client'
+</script>

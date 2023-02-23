@@ -29,11 +29,11 @@ GPT AI Assistant 是基於 OpenAI API 與 LINE Messaging API 實作的應用程�
 ## 安裝步驟
 
 - 登入 [OpenAI](https://beta.openai.com/) 平台，或註冊一個新的帳號。
-  - 生成一個 OpenAI 的 <a href="/images/openai-api-key.png" target="_blank">API key</a>。
+  - 生成一個 OpenAI 的 <a :href="withBase('/images/openai-api-key.png')" target="_blank">API key</a>。
 - 登入 [LINE](https://developers.line.biz/zh-hant/) 平台，或註冊一個新的帳號。
   - 新增一個提供者（Provider），例如「My Provider」。
   - 在「My Provider」新增一個類型為「Messaging API」的頻道（Channel），例如「My AI Assistant」。
-  - 進到「My AI Assistant」頻道頁面，點選「Messaging API」頁籤，生成一個頻道的 <a href="/images/line-channel-access-token.png" target="_blank">channel access token</a>。
+  - 進到「My AI Assistant」頻道頁面，點選「Messaging API」頁籤，生成一個頻道的 <a :href="withBase('/images/line-channel-access-token.png')" target="_blank">channel access token</a>。
 - 登入 [GitHub](https://github.com/) 平台，或註冊一個新的帳號。
   - 進到 [gpt-ai-assistant](https://github.com/memochou1993/gpt-ai-assistant) 專案頁面。
   - 點選「Star」按鈕，支持這個專案與開發者。
@@ -42,9 +42,9 @@ GPT AI Assistant 是基於 OpenAI API 與 LINE Messaging API 實作的應用程�
   - 點選「Create a New Project」按鈕，建立一個新專案。
   - 點選「Import」按鈕，將 `gpt-ai-assistant` 專案匯入。
   - 點選「Environment Variables」頁籤，新增以下環境變數：
-    - `OPENAI_API_KEY`：將值設置為 OpenAI 的 <a href="/images/openai-api-key.png" target="_blank">API key</a>。
-    - `LINE_CHANNEL_ACCESS_TOKEN`：將值設置為 LINE 的 <a href="/images/line-channel-access-token.png" target="_blank">channel access token</a>。
-    - `LINE_CHANNEL_SECRET`：將值設置為 LINE 的 <a href="/images/line-channel-secret.png" target="_blank">channel secret</a>。
+    - `OPENAI_API_KEY`：將值設置為 OpenAI 的 <a :href="withBase('/images/openai-api-key.png')" target="_blank">API key</a>。
+    - `LINE_CHANNEL_ACCESS_TOKEN`：將值設置為 LINE 的 <a :href="withBase('/images/line-channel-access-token.png')" target="_blank">channel access token</a>。
+    - `LINE_CHANNEL_SECRET`：將值設置為 LINE 的 <a :href="withBase('/images/line-channel-secret.png')" target="_blank">channel secret</a>。
   - 點選「Deploy」按鈕，等待部署完成。
   - 回到專案首頁，複製應用程式網址（Domains），例如「<https://gpt-ai-assistant.vercel.app/>」。
 - 回到 [LINE](https://developers.line.biz/zh-hant/) 平台。
@@ -63,7 +63,7 @@ GPT AI Assistant 是基於 OpenAI API 與 LINE Messaging API 實作的應用程�
 當 Vercel 機器人偵測到程式碼有變更，將會自動重新部署。
 
 <div align="center">
-  <img src="/images/github-sync-fork.png" width="600"/>
+  <img :src="withBase('/images/github-sync-fork.png')" width="600"/>
 </div>
 
 ## 指令
@@ -149,10 +149,10 @@ GPT AI Assistant 是基於 OpenAI API 與 LINE Messaging API 實作的應用程�
 `ERROR_TIMEOUT_DISABLED` | `false` | 將呼叫 API 超時的錯誤關閉，值必須為 `true` 或 `false`。
 `VERCEL_TIMEOUT` | 9000 | 呼叫 Vercel API 的超時時間。
 `VERCEL_PROJECT_NAME` | `gpt-ai-assistant` | Vercel 的專案名稱。當 Vercel 的專案名稱與 GitHub 的專案名稱不一樣時，可以使用此環境變數指定。
-`VERCEL_ACCESS_TOKEN` | `null` | Vercel 的 <a href="/images/vercel-access-token.png" target="_blank">access token</a>。
-`VERCEL_DEPLOY_HOOK_URL` | `null` | Vercel 的 <a href="/images/vercel-deploy-hook-url.png" target="_blank">deploy hook URL</a>。
+`VERCEL_ACCESS_TOKEN` | `null` | Vercel 的 <a :href="withBase('/images/vercel-access-token.png')" target="_blank">access token</a>。
+`VERCEL_DEPLOY_HOOK_URL` | `null` | Vercel 的 <a :href="withBase('/images/vercel-deploy-hook-url.png')" target="_blank">deploy hook URL</a>。
 `OPENAI_TIMEOUT` | 9000 | 呼叫 OpenAI API 的超時時間。
-`OPENAI_API_KEY` | `null` | OpenAI 的 <a href="/images/openai-api-key.png" target="_blank">API key</a>。
+`OPENAI_API_KEY` | `null` | OpenAI 的 <a :href="withBase('/images/openai-api-key.png')" target="_blank">API key</a>。
 `OPENAI_COMPLETION_MODEL` | `text-davinci-003` | 詳見 [model](https://beta.openai.com/docs/api-reference/completions/create#completions/create-model) 參數說明。
 `OPENAI_COMPLETION_TEMPERATURE` | `0.9` | 詳見 [temperature](https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature) 參數說明。
 `OPENAI_COMPLETION_MAX_TOKENS` | `160` | 詳見 [max_tokens](https://beta.openai.com/docs/api-reference/completions/create#completions/create-max_tokens) 參數說明。
@@ -160,14 +160,14 @@ GPT AI Assistant 是基於 OpenAI API 與 LINE Messaging API 實作的應用程�
 `OPENAI_COMPLETION_PRESENCE_PENALTY` | `0.6` | 詳見 [presence_penalty](https://beta.openai.com/docs/api-reference/completions/create#completions/create-presence_penalty) 參數說明。
 `OPENAI_IMAGE_GENERATION_SIZE` | `256x256` | 詳見 [size](https://beta.openai.com/docs/api-reference/images/create#images/create-size) 參數說明。
 `LINE_TIMEOUT` | 9000 | 呼叫 LINE Messaging API 的超時時間。
-`LINE_CHANNEL_ACCESS_TOKEN` | `null` | LINE 的 <a href="/images/line-channel-access-token.png" target="_blank">channel access token</a>。
-`LINE_CHANNEL_SECRET` | `null` | LINE 的 <a href="/images/line-channel-secret.png" target="_blank">channel secret</a>。
-`SERPAPI_API_KEY` | `null` | SerpApi 的 <a href="/images/serpapi-api-key.png" target="_blank">API key</a>。
+`LINE_CHANNEL_ACCESS_TOKEN` | `null` | LINE 的 <a :href="withBase('/images/line-channel-access-token.png')" target="_blank">channel access token</a>。
+`LINE_CHANNEL_SECRET` | `null` | LINE 的 <a :href="withBase('/images/line-channel-secret.png')" target="_blank">channel secret</a>。
+`SERPAPI_API_KEY` | `null` | SerpApi 的 <a :href="withBase('/images/serpapi-api-key.png')" target="_blank">API key</a>。
 
 點選「Redeploy」按鈕，以重新部署。
 
 <div align="center">
-  <img src="/images/vercel-redeploy.png" width="600"/>
+  <img :src="withBase('/images/vercel-redeploy.png')" width="600"/>
 </div>
 
 ### 常見問題
@@ -317,25 +317,25 @@ docker-compose up -d
 請在 Vercel 平台檢查專案的環境變數是否填寫正確。
 
 <div align="center">
-  <img src="/images/vercel-environments.png" width="600"/>
+  <img :src="withBase('/images/vercel-environments.png')" width="600"/>
 </div>
 
 如果有變更，點選「Redeploy」按鈕，以重新部署。
 
 <div align="center">
-  <img src="/images/vercel-redeploy.png" width="600"/>
+  <img :src="withBase('/images/vercel-redeploy.png')" width="600"/>
 </div>
 
 在專案首頁點選「View Function Logs」按鈕。
 
 <div align="center">
-  <img src="/images/vercel-view-logs.png" width="600"/>
+  <img :src="withBase('/images/vercel-view-logs.png')" width="600"/>
 </div>
 
 查看應用程式的錯誤訊息。
 
 <div align="center">
-  <img src="/images/vercel-logs.png" width="600"/>
+  <img :src="withBase('/images/vercel-logs.png')" width="600"/>
 </div>
 
 ## 更新日誌
