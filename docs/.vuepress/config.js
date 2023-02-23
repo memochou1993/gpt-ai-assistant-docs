@@ -6,6 +6,7 @@ module.exports = {
   theme: defaultTheme({
     repo: 'memochou1993/gpt-ai-assistant',
     docsRepo: 'memochou1993/gpt-ai-assistant-docs',
+    editLink: false,
     navbar: [
       {
         text: 'Languages',
