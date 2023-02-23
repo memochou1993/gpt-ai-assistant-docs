@@ -3,9 +3,9 @@
 GPT AI Assistant 是基於 OpenAI API 與 LINE Messaging API 實作的應用程式。透過安裝步驟，你可以立即使用 LINE 手機應用程式與你專屬的 AI 助理聊天。
 
 <div align="center">
-  <img src="/images/screenshot-zh-1.png" width="300"/>
+  <img :src="withBase('/images/screenshot-zh-1.png')" width="300"/>
   &nbsp;
-  <img src="/images/screenshot-zh-2.png" width="300"/>
+  <img :src="withBase('/images/screenshot-zh-2.png')" width="300"/>
 </div>
 
 ## 目次
@@ -358,3 +358,7 @@ docker-compose up -d
 ## 授權條款
 
 [MIT](https://github.com/memochou1993/gpt-ai-assistant/blob/main/LICENSE)
+
+<script setup>
+import { withBase } from '@vuepress/client'
+</script>
