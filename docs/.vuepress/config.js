@@ -2,6 +2,7 @@ import { defaultTheme } from '@vuepress/theme-default';
 
 module.exports = {
   theme: defaultTheme({
+    base: 'gpt-ai-assistant-docs',
     repo: 'memochou1993/gpt-ai-assistant',
     docsRepo: 'memochou1993/gpt-ai-assistant-docs',
     navbar: [
