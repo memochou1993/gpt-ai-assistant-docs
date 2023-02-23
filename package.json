@@ -1,0 +1,21 @@
+{
+  "name": "gpt-ai-assistant-docs",
+  "description": "",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memochou1993/gpt-ai-assistant.git"
+  },
+  "author": "Memo Chou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/memochou1993/gpt-ai-assistant/issues"
+  },
+  "homepage": "https://github.com/memochou1993/gpt-ai-assistant#readme",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.60"
+  }
+}
