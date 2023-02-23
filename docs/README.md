@@ -10,18 +10,17 @@ GPT AI Assistant 是基於 OpenAI API 與 LINE Messaging API 實作的應用程�
 
 ## 目次
 
-- [相關教學](#相關教學)
+- [教學](#教學)
 - [安裝步驟](#安裝步驟)
 - [程式更新](#程式更新)
 - [指令](#指令)
 - [環境變數](#環境變數)
 - [開發](#開發)
 - [更新日誌](#更新日誌)
-- [貢獻者](#貢獻者)
 - [相關專案](#相關專案)
 - [授權條款](#授權條款)
 
-## 相關教學
+## 教學
 
 - 「[如何創建類似 ChatGPT 的 Line Bot 聊天機器人！](https://www.youtube.com/watch?v=uHsCou1AfEU)」by [程式猿](https://www.youtube.com/@appfromape)
 - 「[ChatGPT LINE 機器人創建教學，教你打造個人專屬 LINE AI 助理隨時都能聊](https://mrmad.com.tw/chatgpt-line-robot-creation-teaching)」 by [瘋先生](https://mrmad.com.tw/)
@@ -341,13 +340,6 @@ docker-compose up -d
 ## 更新日誌
 
 請到「[Releases](https://github.com/memochou1993/gpt-ai-assistant/releases)」頁面查看發布通知。
-
-## 貢獻者
-
-- [jayer95](https://github.com/jayer95) - Debugging and testing
-- [kkdai](https://github.com/kkdai) - Idea of "sum" command
-- [Dayu0815](https://github.com/Dayu0815) - Idea of "search" command
-- [All other contributors](https://github.com/memochou1993/gpt-ai-assistant/graphs/contributors)
 
 ## 相關專案
 

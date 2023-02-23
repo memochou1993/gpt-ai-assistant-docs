@@ -303,13 +303,6 @@ docker-compose up -d
 
 Detailed changes for each release are documented in the [release notes](https://github.com/memochou1993/gpt-ai-assistant/releases).
 
-## Credits
-
-- [jayer95](https://github.com/jayer95) - Debugging and testing
-- [kkdai](https://github.com/kkdai) - Idea of "sum" command
-- [Dayu0815](https://github.com/Dayu0815) - Idea of "search" command
-- [All other contributors](https://github.com/memochou1993/gpt-ai-assistant/graphs/contributors)
-
 ## Related Projects
 
 - [line-bot-node](https://github.com/memochou1993/line-bot-node)
