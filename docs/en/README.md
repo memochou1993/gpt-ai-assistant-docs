@@ -135,7 +135,7 @@ Name | Default Value | Description
 `APP_LANG` | `zh` | Application language. The value must be one of `zh`, `en` or `ja`.
 `APP_MAX_GROUPS` | `1` | Maximum groups. The `VERCEL_ACCESS_TOKEN` environment variable is required.
 `APP_MAX_USERS` | `5` | Maximum users. The `VERCEL_ACCESS_TOKEN` environment variable is required.
-`HUMAN_NAME` | `Human` | Name of user.
+`HUMAN_NAME` | `''` | Name of user.
 `HUMAN_BACKGROUND` | `''` | Background or personality of user.
 `BOT_NAME` | `AI` | Name of AI Assistant. This is used to call AI Assistant when auto-reply is deactivated.
 `BOT_BACKGROUND` | `''` | Background or personality of AI Assistant.
