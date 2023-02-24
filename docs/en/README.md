@@ -136,9 +136,9 @@ Name | Default Value | Description
 `APP_MAX_GROUPS` | `1` | Maximum groups. The `VERCEL_ACCESS_TOKEN` environment variable is required.
 `APP_MAX_USERS` | `5` | Maximum users. The `VERCEL_ACCESS_TOKEN` environment variable is required.
 `HUMAN_NAME` | `''` | Name of user.
-`HUMAN_BACKGROUND` | `''` | Background or personality of user.
+`HUMAN_INIT_PROMPT` | `''` | Initial prompt of user.
 `BOT_NAME` | `AI` | Name of AI Assistant. This is used to call AI Assistant when auto-reply is deactivated.
-`BOT_BACKGROUND` | `''` | Background or personality of AI Assistant.
+`BOT_INIT_PROMPT` | `''` | Initial prompt of AI Assistant.
 `BOT_TONE` | `''` | Tone of AI Assistant.
 `BOT_DEACTIVATED` | `false` | Deactivate auto-reply at the beginning. The value must be `true` of `false`.
 `ERROR_TIMEOUT_DISABLED` | `false` | Disable timeout error. The value must be `true` of `false`.
