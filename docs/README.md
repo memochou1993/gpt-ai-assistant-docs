@@ -162,6 +162,7 @@ GPT AI Assistant 是基於 OpenAI API 與 LINE Messaging API 實作的應用程�
 `LINE_CHANNEL_ACCESS_TOKEN` | `null` | LINE 的 <a :href="withBase('/images/line-channel-access-token.png')" target="_blank">channel access token</a>。
 `LINE_CHANNEL_SECRET` | `null` | LINE 的 <a :href="withBase('/images/line-channel-secret.png')" target="_blank">channel secret</a>。
 `SERPAPI_API_KEY` | `null` | SerpApi 的 <a :href="withBase('/images/serpapi-api-key.png')" target="_blank">API key</a>。
+`SERPAPI_TIMEOUT` | 9000 | 呼叫 SerpApi API 的超時時間。
 
 點選「Redeploy」按鈕，以重新部署。
 

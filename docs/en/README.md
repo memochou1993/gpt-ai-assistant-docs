@@ -158,6 +158,7 @@ Name | Default Value | Description
 `LINE_CHANNEL_ACCESS_TOKEN` | `null` | LINE <a :href="withBase('/images/line-channel-access-token.png')" target="_blank">channel access token</a>
 `LINE_CHANNEL_SECRET` | `null` | LINE <a :href="withBase('/images/line-channel-secret.png')" target="_blank">channel secret</a>
 `SERPAPI_API_KEY` | `null` | SerpApi <a :href="withBase('/images/serpapi-api-key.png')" target="_blank">API key</a>
+`SERPAPI_TIMEOUT` | 9000 | Timeout for SerpApi API calls.
 
 Click the "Redeploy" button to redeploy if there are any changes.
 
