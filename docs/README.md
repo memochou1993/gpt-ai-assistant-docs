@@ -136,9 +136,12 @@ GPT AI Assistant 是基於 OpenAI API 與 LINE Messaging API 實作的應用程�
 --- | --- | ---
 `APP_DEBUG` | `false` | 是否在標準輸出印出訊息，值必須為 `true` 或 `false`。
 `APP_WEBHOOK_PATH` | `/webhook` | 客製的 webhook URL 路徑。
+`APP_API_TIMEOUT` | `9000` | 呼叫外部服務 API 的超時時間。
 `APP_LANG` | `zh` | 程式的初始語言，值必須為 `zh`、`en` 或 `ja`。
 `APP_MAX_GROUPS` | `1` | 群組數量上限，須搭配 `VERCEL_ACCESS_TOKEN` 環境變數。
 `APP_MAX_USERS` | `5` | 用戶數量上限，須搭配 `VERCEL_ACCESS_TOKEN` 環境變數。
+`APP_MAX_PROMPT_SENTENCES` | `12` | 提示詞語句的數量上限。
+`APP_MAX_PROMPT_TOKENS` | `1024` | 提示詞單詞的數量上限。
 `HUMAN_NAME` | `''` | 使用者的名字。
 `HUMAN_INIT_PROMPT` | `''` | 使用者的初始提示詞，用來設定使用者或 AI 助理的人物設定。
 `BOT_NAME` | `AI` | AI 助理的名字。在 AI 自動回覆設為關閉時，可以用來呼叫。
@@ -146,11 +149,11 @@ GPT AI Assistant 是基於 OpenAI API 與 LINE Messaging API 實作的應用程�
 `BOT_TONE` | `''` | AI 助理的回覆語氣。
 `BOT_DEACTIVATED` | `false` | 是否在一開始將自動回覆設為關閉，值必須為 `true` 或 `false`。
 `ERROR_TIMEOUT_DISABLED` | `false` | 將呼叫 API 超時的錯誤關閉，值必須為 `true` 或 `false`。
-`VERCEL_TIMEOUT` | 9000 | 呼叫 Vercel API 的超時時間。
+`VERCEL_TIMEOUT` | `<APP_API_TIMEOUT>` | 呼叫 Vercel API 的超時時間。
 `VERCEL_PROJECT_NAME` | `gpt-ai-assistant` | Vercel 的專案名稱。當 Vercel 的專案名稱與 GitHub 的專案名稱不一樣時，可以使用此環境變數指定。
 `VERCEL_ACCESS_TOKEN` | `null` | Vercel 的 <a :href="withBase('/images/vercel-access-token.png')" target="_blank">access token</a>。
 `VERCEL_DEPLOY_HOOK_URL` | `null` | Vercel 的 <a :href="withBase('/images/vercel-deploy-hook-url.png')" target="_blank">deploy hook URL</a>。
-`OPENAI_TIMEOUT` | 9000 | 呼叫 OpenAI API 的超時時間。
+`OPENAI_TIMEOUT` | `<APP_API_TIMEOUT>` | 呼叫 OpenAI API 的超時時間。
 `OPENAI_API_KEY` | `null` | OpenAI 的 <a :href="withBase('/images/openai-api-key.png')" target="_blank">API key</a>。
 `OPENAI_COMPLETION_MODEL` | `text-davinci-003` | 詳見 [model](https://beta.openai.com/docs/api-reference/completions/create#completions/create-model) 參數說明。
 `OPENAI_COMPLETION_TEMPERATURE` | `0.9` | 詳見 [temperature](https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature) 參數說明。
@@ -158,11 +161,11 @@ GPT AI Assistant 是基於 OpenAI API 與 LINE Messaging API 實作的應用程�
 `OPENAI_COMPLETION_FREQUENCY_PENALTY` | `0` | 詳見 [frequency_penalty](https://beta.openai.com/docs/api-reference/completions/create#completions/create-frequency_penalty) 參數說明。
 `OPENAI_COMPLETION_PRESENCE_PENALTY` | `0.6` | 詳見 [presence_penalty](https://beta.openai.com/docs/api-reference/completions/create#completions/create-presence_penalty) 參數說明。
 `OPENAI_IMAGE_GENERATION_SIZE` | `256x256` | 詳見 [size](https://beta.openai.com/docs/api-reference/images/create#images/create-size) 參數說明。
-`LINE_TIMEOUT` | 9000 | 呼叫 LINE Messaging API 的超時時間。
+`LINE_TIMEOUT` | `<APP_API_TIMEOUT>` | 呼叫 LINE Messaging API 的超時時間。
 `LINE_CHANNEL_ACCESS_TOKEN` | `null` | LINE 的 <a :href="withBase('/images/line-channel-access-token.png')" target="_blank">channel access token</a>。
 `LINE_CHANNEL_SECRET` | `null` | LINE 的 <a :href="withBase('/images/line-channel-secret.png')" target="_blank">channel secret</a>。
 `SERPAPI_API_KEY` | `null` | SerpApi 的 <a :href="withBase('/images/serpapi-api-key.png')" target="_blank">API key</a>。
-`SERPAPI_TIMEOUT` | 9000 | 呼叫 SerpApi API 的超時時間。
+`SERPAPI_TIMEOUT` | `<APP_API_TIMEOUT>` | 呼叫 SerpApi API 的超時時間。
 
 點選「Redeploy」按鈕，以重新部署。
 
