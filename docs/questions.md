@@ -126,7 +126,7 @@ import { withBase } from '@vuepress/client'
 - 在 Vercel 平台，提高 `APP_MAX_USERS` 環境變數的值。
 :::
 
-## 可以 Webhook URL 的路徑嗎？
+## 可以修改 Webhook URL 的路徑嗎？
 
 可以。
 
@@ -207,7 +207,7 @@ import { withBase } from '@vuepress/client'
 - 在 Vercel 平台，修改 `APP_MAX_PROMPT_TOKENS` 環境變數的值。
 :::
 
-## 可以讓 AI 知道我是誰嗎？
+## 可以設定自己的人物設定嗎？
 
 可以。
 
@@ -215,6 +215,7 @@ import { withBase } from '@vuepress/client'
 
 - 在 Vercel 平台，修改 `HUMAN_NAME` 環境變數的值。
 - 在 Vercel 平台，修改 `HUMAN_INIT_PROMPT` 環境變數的值。
+- 在 Vercel 平台，修改 `BOT_INIT_PROMPT` 環境變數的值。
 :::
 
 ## 可以設定 AI 的人物設定嗎？
@@ -224,14 +225,6 @@ import { withBase } from '@vuepress/client'
 ::: tip 解決方案：
 
 - 在 Vercel 平台，修改 `HUMAN_INIT_PROMPT` 環境變數的值。
-:::
-
-## 可以讓 AI 知道自己是誰嗎？
-
-可以。
-
-::: tip 解決方案：
-
 - 在 Vercel 平台，修改 `BOT_NAME` 環境變數的值。
 - 在 Vercel 平台，修改 `BOT_INIT_PROMPT` 環境變數的值。
 :::
