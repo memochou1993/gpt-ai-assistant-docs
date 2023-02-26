@@ -2,11 +2,9 @@
 import { withBase } from '@vuepress/client'
 </script>
 
-# Introduction
+# Environment Variables
 
 Set environment variables to change program settings.
-
-## Environment Variables
 
 Name | Default Value | Description
 --- | --- | ---

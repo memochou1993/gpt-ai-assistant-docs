@@ -2,7 +2,7 @@
 import { withBase } from '@vuepress/client'
 </script>
 
-# Introduction
+# Commands
 
 Send commands using the LINE mobile app to perform specific functions.
 
