@@ -1,5 +1,5 @@
 import { defaultTheme } from '@vuepress/theme-default';
-import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics';
 
 module.exports = {
   base: '/gpt-ai-assistant-docs/',
@@ -7,7 +7,6 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh',
-      sidebarDepth: 3,
     },
     '/en/': {
       lang: 'en',
