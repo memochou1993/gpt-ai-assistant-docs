@@ -10,6 +10,7 @@ GPT AI Assistant is an application that is implemented using the OpenAI API and 
 
 <div align="center">
   <br>
+  &nbsp;
   <img :src="withBase('/images/screenshot-en-1.png')" width="300"/>
   &nbsp;
   <img :src="withBase('/images/screenshot-en-2.png')" width="300"/>

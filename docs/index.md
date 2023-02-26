@@ -10,6 +10,7 @@ GPT AI Assistant 是基於 OpenAI API 與 LINE Messaging API 實作的應用程�
 
 <div align="center">
   <br>
+  &nbsp;
   <img :src="withBase('/images/screenshot-zh-1.png')" width="300"/>
   &nbsp;
   <img :src="withBase('/images/screenshot-zh-2.png')" width="300"/>
