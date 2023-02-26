@@ -1,4 +1,5 @@
 import { defaultTheme } from '@vuepress/theme-default';
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 
 module.exports = {
   base: '/gpt-ai-assistant-docs/',
@@ -66,4 +67,9 @@ module.exports = {
       ],
     },
   }),
+  plugins: [
+    googleAnalyticsPlugin({
+      id: 'G-L8KJ2RLXX8',
+    }),
+  ],
 };
