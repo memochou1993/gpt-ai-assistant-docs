@@ -251,7 +251,7 @@ import { withBase } from '@vuepress/client'
 
 ::: tip 訣竅：
 
-- 生成一個 SerpApi 的 API key，詳見<a :href="withBase('/04-environments#一覽')" target="_blank">環境變數</a>說明。
+- 生成一個 [SerpApi](https://serpapi.com/) 的 <a :href="withBase('/images/serpapi-api-key.png')" target="_blank">API key</a>，詳見<a :href="withBase('/environments#一覽')" target="_blank">環境變數</a>說明。
 - 在 Vercel 平台，新增 `SERPAPI_API_KEY` 環境變數。
 - 使用「查詢」指令，讓 AI 連網查詢資料。
 :::
