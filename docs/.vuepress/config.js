@@ -18,7 +18,7 @@ module.exports = {
   theme: defaultTheme({
     repo: 'memochou1993/gpt-ai-assistant',
     docsRepo: 'memochou1993/gpt-ai-assistant-docs',
-    editLink: false,
+    docsDir: 'docs',
     locales: {
       '/': {
         selectLanguageName: '中文',
