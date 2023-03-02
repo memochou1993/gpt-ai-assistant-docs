@@ -4,9 +4,29 @@ import { withBase } from '@vuepress/client'
 
 # 常見問題
 
-## 使用 GPT AI Assistant 是免費的嗎？
+## GPT AI Assistant 是免費的嗎？
 
-是的。GPT AI Assistant 是一個開源專案，因此是免費的。
+GPT AI Assistant 是一個免費的開源專案。
+
+## GPT AI Assistant 預設的語言模型是什麼？
+
+GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語言模式，與 [ChatGPT](https://chat.openai.com/) 一樣。
+
+::: tip 訣竅：
+
+- 在 Vercel 平台，修改 `OPENAI_COMPLETION_MODEL` 環境變數的值，可以改變語言模型。
+:::
+
+## GPT AI Assistant 可以連網嗎？
+
+可以，但是會有額度。
+
+::: tip 訣竅：
+
+- 生成一個 [SerpApi](https://serpapi.com/) 的 <a :href="withBase('/images/serpapi-api-key.png')" target="_blank">API key</a>，詳見<a :href="withBase('/environments#一覽')" target="_blank">環境變數</a>說明。
+- 在 Vercel 平台，新增 `SERPAPI_API_KEY` 環境變數。
+- 使用「查詢」指令，讓 AI 連網查詢資料。
+:::
 
 ## 使用 OpenAI 免費方案有哪些限制？
 
@@ -96,10 +116,11 @@ import { withBase } from '@vuepress/client'
 
 ## 為什麼 LINE 訊息中出現 429 錯誤？
 
-在使用 LINE 聊天時，出現「429 Too Many Requests」的錯誤，代表 OpenAI 的免費方案已經到期了，或是超過使用額度了。
+在使用 LINE 聊天時，出現「429 Too Many Requests」的錯誤，代表使用者一下子傳送了太多訊息。也有可能是 OpenAI 的免費方案已經到期了，或者是超過使用額度了。
 
 ::: tip 訣竅：
 
+- 過一陣子再傳送訊息。
 - 使用一組新的電子郵件與手機號碼，註冊一個新的 OpenAI 帳號。
 - 訂閱 OpenAI 的付費方案。
 :::
@@ -243,15 +264,4 @@ import { withBase } from '@vuepress/client'
 ::: tip 訣竅：
 
 - 在 Vercel 平台，修改 `BOT_TONE` 環境變數的值。
-:::
-
-## 可以讓 AI 連網查詢資料嗎？
-
-可以。
-
-::: tip 訣竅：
-
-- 生成一個 [SerpApi](https://serpapi.com/) 的 <a :href="withBase('/images/serpapi-api-key.png')" target="_blank">API key</a>，詳見<a :href="withBase('/environments#一覽')" target="_blank">環境變數</a>說明。
-- 在 Vercel 平台，新增 `SERPAPI_API_KEY` 環境變數。
-- 使用「查詢」指令，讓 AI 連網查詢資料。
 :::
