@@ -24,7 +24,7 @@ import { withBase } from '@vuepress/client'
 ::: tip 訣竅：
 
 - 降低 `OPENAI_COMPLETION_MAX_TOKENS` 環境變數的值。
-- 降低 `APP_MAX_PROMPT_SENTENCES` 環境變數的值。
+- 降低 `APP_MAX_PROMPT_MESSAGES` 環境變數的值。
 - 降低 `APP_MAX_PROMPT_TOKENS` 環境變數的值。
 - 訂閱 Vercel 的付費方案。
 - 使用虛擬專用伺服器進行部署。
@@ -202,7 +202,7 @@ import { withBase } from '@vuepress/client'
 
 ::: tip 訣竅：
 
-- 在 Vercel 平台，修改 `APP_MAX_PROMPT_SENTENCES` 環境變數的值。
+- 在 Vercel 平台，修改 `APP_MAX_PROMPT_MESSAGES` 環境變數的值。
 :::
 
 ## 可以修改上下文單詞的數量上限嗎？

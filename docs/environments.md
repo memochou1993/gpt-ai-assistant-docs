@@ -18,7 +18,7 @@ import { withBase } from '@vuepress/client'
 `APP_LANG` | `zh` | 程式的初始語言，值必須為 `zh`、`en` 或 `ja`。
 `APP_MAX_GROUPS` | `1` | 群組數量上限，需要設置 `VERCEL_ACCESS_TOKEN` 環境變數。
 `APP_MAX_USERS` | `5` | 用戶數量上限，需要設置 `VERCEL_ACCESS_TOKEN` 環境變數。
-`APP_MAX_PROMPT_SENTENCES` | `12` | 上下文語句的數量上限。
+`APP_MAX_PROMPT_MESSAGES` | `12` | 上下文語句的數量上限。
 `APP_MAX_PROMPT_TOKENS` | `1024` | 上下文單詞的數量上限。
 `HUMAN_NAME` | `''` | 使用者的名字。
 `HUMAN_INIT_PROMPT` | `''` | 使用者的初始提示詞，用來設定使用者或 AI 的人物設定。
