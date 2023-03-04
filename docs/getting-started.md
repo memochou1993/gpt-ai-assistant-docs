@@ -18,6 +18,7 @@ import { withBase } from '@vuepress/client'
 適合一般人，大約可以在 15 至 20 分鐘完成安裝。
 
 - 「[如何創建類似 ChatGPT 的 Line Bot 聊天機器人！](https://www.youtube.com/watch?v=uHsCou1AfEU)」by [程式猿](https://www.youtube.com/@appfromape)
+- 「[真的是 ChatGPT！GPT AI Assistant 4.0 聊天機器人升級版！](https://www.youtube.com/watch?v=77ggAZPy0mI)」by [程式猿](https://www.youtube.com/@appfromape)
 
 ## 圖文教學
 
