@@ -16,6 +16,7 @@ Name | Default Value | Description
 `APP_MAX_USERS` | `5` | Maximum users. The `VERCEL_ACCESS_TOKEN` environment variable is required.
 `APP_MAX_PROMPT_MESSAGES` | `12` | Maximum prompt sentences.
 `APP_MAX_PROMPT_TOKENS` | `1024` | Maximum prompt tokens.
+`APP_INIT_PROMPT` | `''` | Initial prompt of system.
 `HUMAN_NAME` | `''` | Name of user.
 `HUMAN_INIT_PROMPT` | `''` | Initial prompt of user.
 `BOT_NAME` | `AI` | Name of AI Assistant. This is used to call AI Assistant when auto-reply is deactivated.
