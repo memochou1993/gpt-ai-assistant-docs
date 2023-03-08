@@ -25,7 +25,8 @@ Name | Default Value | Description
 `BOT_DEACTIVATED` | `false` | Deactivate auto-reply at the beginning. The value must be `true` of `false`.
 `ERROR_TIMEOUT_DISABLED` | `false` | Disable timeout error. The value must be `true` of `false`.
 `VERCEL_TIMEOUT` | `<APP_API_TIMEOUT>` | Timeout for Vercel API calls.
-`VERCEL_PROJECT_NAME` | `gpt-ai-assistant` | Custom Vercel project name. You can use this environment variable when the Vercel project name differs from the GitHub project name.
+`VERCEL_PROJECT_NAME` | `gpt-ai-assistant` | Vercel project name. You can use this environment variable when the Vercel project name differs from the GitHub project name.
+`VERCEL_TEAM_ID` | `null` | Vercel team ID. You must use this environment variable when using Vercel's Pro plan.
 `VERCEL_ACCESS_TOKEN` | `null` | Vercel <a :href="withBase('/images/vercel-access-token.png')" target="_blank">access token</a>
 `VERCEL_DEPLOY_HOOK_URL` | `null` | Vercel <a :href="withBase('/images/vercel-deploy-hook-url.png')" target="_blank">deploy hook URL</a>
 `OPENAI_TIMEOUT` | `<APP_API_TIMEOUT>` | Timeout for OpenAI API calls.

@@ -14,7 +14,7 @@ GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語�
 
 ::: tip 訣竅：
 
-- 在 Vercel 平台，修改 `OPENAI_COMPLETION_MODEL` 環境變數的值，可以改變語言模型。
+- 在 Vercel 平台修改 `OPENAI_COMPLETION_MODEL` 環境變數的值，可以改變語言模型。
 :::
 
 ## GPT AI Assistant 可以連網嗎？
@@ -24,7 +24,7 @@ GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語�
 ::: tip 訣竅：
 
 - 生成一個 [SerpApi](https://serpapi.com/) 的 <a :href="withBase('/images/serpapi-api-key.png')" target="_blank">API key</a>，詳見<a :href="withBase('/environments#一覽')" target="_blank">環境變數</a>說明。
-- 在 Vercel 平台，新增 `SERPAPI_API_KEY` 環境變數。
+- 在 Vercel 平台新增 `SERPAPI_API_KEY` 環境變數。
 - 使用「查詢」指令，讓 AI 連網查詢資料。
 :::
 
@@ -41,12 +41,13 @@ GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語�
 ## 使用 Vercel 免費方案有哪些限制？
 
 使用 Vercel 免費方案，會有 10 秒的超時限制。如果 AI 的處理時間太久的話，就會無法取得回應。
+
 ::: tip 訣竅：
 
-- 降低 `OPENAI_COMPLETION_MAX_TOKENS` 環境變數的值。
-- 降低 `APP_MAX_PROMPT_MESSAGES` 環境變數的值。
-- 降低 `APP_MAX_PROMPT_TOKENS` 環境變數的值。
-- 訂閱 Vercel 的付費方案。
+- 在 Vercel 平台降低 `OPENAI_COMPLETION_MAX_TOKENS` 環境變數的值。
+- 在 Vercel 平台降低 `APP_MAX_PROMPT_MESSAGES` 環境變數的值。
+- 在 Vercel 平台降低 `APP_MAX_PROMPT_TOKENS` 環境變數的值。
+- 訂閱 Vercel 的付費方案，並在 Vercel 平台新增 `VERCEL_TEAM_ID` 環境變數。
 - 使用虛擬專用伺服器進行部署。
 :::
 
@@ -149,9 +150,9 @@ GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語�
 
 ::: tip 訣竅：
 
-- 在 LINE 平台，將「Allow bot to join group chats」功能開啟。
-- 在 Vercel 平台，提高 `APP_MAX_GROUPS` 環境變數的值。
-- 在 Vercel 平台，提高 `APP_MAX_USERS` 環境變數的值。
+- 在 LINE 平台將「Allow bot to join group chats」功能開啟。
+- 在 Vercel 平台提高 `APP_MAX_GROUPS` 環境變數的值。
+- 在 Vercel 平台提高 `APP_MAX_USERS` 環境變數的值。
 :::
 
 ## 可以修改 Webhook URL 的路徑嗎？
@@ -160,7 +161,7 @@ GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語�
 
 ::: tip 訣竅：
 
-- 在 Vercel 平台，修改 `APP_WEBHOOK_PATH` 環境變數的值。
+- 在 Vercel 平台修改 `APP_WEBHOOK_PATH` 環境變數的值。
 :::
 
 ## 可以修改 API 超時時間嗎？
@@ -169,7 +170,7 @@ GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語�
 
 ::: tip 訣竅：
 
-- 在 Vercel 平台，修改 `APP_API_TIMEOUT` 環境變數的值。
+- 在 Vercel 平台修改 `APP_API_TIMEOUT` 環境變數的值。
 :::
 
 ## 可以修改介面語言嗎？
@@ -178,7 +179,7 @@ GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語�
 
 ::: tip 訣竅：
 
-- 在 Vercel 平台，修改 `APP_LANG` 環境變數的值。
+- 在 Vercel 平台修改 `APP_LANG` 環境變數的值。
 :::
 
 ## 可以修改群組數量上限嗎？
@@ -187,7 +188,7 @@ GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語�
 
 ::: tip 訣竅：
 
-- 在 Vercel 平台，修改 `APP_MAX_GROUPS` 環境變數的值。
+- 在 Vercel 平台修改 `APP_MAX_GROUPS` 環境變數的值。
 :::
 
 ## 可以修改用戶數量上限嗎？
@@ -196,7 +197,7 @@ GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語�
 
 ::: tip 訣竅：
 
-- 在 Vercel 平台，修改 `APP_MAX_USERS` 環境變數的值。
+- 在 Vercel 平台修改 `APP_MAX_USERS` 環境變數的值。
 :::
 
 ## 上下文是什麼？
@@ -223,7 +224,7 @@ GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語�
 
 ::: tip 訣竅：
 
-- 在 Vercel 平台，修改 `APP_MAX_PROMPT_MESSAGES` 環境變數的值。
+- 在 Vercel 平台修改 `APP_MAX_PROMPT_MESSAGES` 環境變數的值。
 :::
 
 ## 可以修改上下文單詞的數量上限嗎？
@@ -232,7 +233,7 @@ GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語�
 
 ::: tip 訣竅：
 
-- 在 Vercel 平台，修改 `APP_MAX_PROMPT_TOKENS` 環境變數的值。
+- 在 Vercel 平台修改 `APP_MAX_PROMPT_TOKENS` 環境變數的值。
 :::
 
 ## 可以設定自己的人物設定嗎？
@@ -241,9 +242,9 @@ GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語�
 
 ::: tip 訣竅：
 
-- 在 Vercel 平台，修改 `HUMAN_NAME` 環境變數的值。
-- 在 Vercel 平台，修改 `HUMAN_INIT_PROMPT` 環境變數的值。
-- 在 Vercel 平台，修改 `BOT_INIT_PROMPT` 環境變數的值。
+- 在 Vercel 平台修改 `HUMAN_NAME` 環境變數的值。
+- 在 Vercel 平台修改 `HUMAN_INIT_PROMPT` 環境變數的值。
+- 在 Vercel 平台修改 `BOT_INIT_PROMPT` 環境變數的值。
 :::
 
 ## 可以設定 AI 的人物設定嗎？
@@ -252,9 +253,9 @@ GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語�
 
 ::: tip 訣竅：
 
-- 在 Vercel 平台，修改 `HUMAN_INIT_PROMPT` 環境變數的值。
-- 在 Vercel 平台，修改 `BOT_NAME` 環境變數的值。
-- 在 Vercel 平台，修改 `BOT_INIT_PROMPT` 環境變數的值。
+- 在 Vercel 平台修改 `HUMAN_INIT_PROMPT` 環境變數的值。
+- 在 Vercel 平台修改 `BOT_NAME` 環境變數的值。
+- 在 Vercel 平台修改 `BOT_INIT_PROMPT` 環境變數的值。
 :::
 
 ## 可以修改 AI 的回覆語氣嗎？
@@ -263,5 +264,5 @@ GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語�
 
 ::: tip 訣竅：
 
-- 在 Vercel 平台，修改 `BOT_TONE` 環境變數的值。
+- 在 Vercel 平台修改 `BOT_TONE` 環境變數的值。
 :::

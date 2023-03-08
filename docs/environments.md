@@ -16,8 +16,8 @@ import { withBase } from '@vuepress/client'
 `APP_WEBHOOK_PATH` | `/webhook` | 應用程式的 webhook URL 路徑。
 `APP_API_TIMEOUT` | `9000` | 呼叫外部服務 API 的超時時間。
 `APP_LANG` | `zh` | 程式的初始語言，值必須為 `zh`、`en` 或 `ja`。
-`APP_MAX_GROUPS` | `1` | 群組數量上限，需要設置 `VERCEL_ACCESS_TOKEN` 環境變數。
-`APP_MAX_USERS` | `5` | 用戶數量上限，需要設置 `VERCEL_ACCESS_TOKEN` 環境變數。
+`APP_MAX_GROUPS` | `1` | 群組數量上限，必須設置 `VERCEL_ACCESS_TOKEN` 環境變數。
+`APP_MAX_USERS` | `5` | 用戶數量上限，必須設置 `VERCEL_ACCESS_TOKEN` 環境變數。
 `APP_MAX_PROMPT_MESSAGES` | `12` | 上下文語句的數量上限。
 `APP_MAX_PROMPT_TOKENS` | `1024` | 上下文單詞的數量上限。
 `APP_INIT_PROMPT` | `''` | 系統的初始提示詞，用來設定使用者或 AI 的人物設定。
@@ -30,6 +30,7 @@ import { withBase } from '@vuepress/client'
 `ERROR_TIMEOUT_DISABLED` | `false` | 是否將呼叫外部服務 API 的超時錯誤關閉，值必須為 `true` 或 `false`。
 `VERCEL_TIMEOUT` | `<APP_API_TIMEOUT>` | 呼叫 Vercel API 的超時時間。
 `VERCEL_PROJECT_NAME` | `gpt-ai-assistant` | Vercel 的專案名稱。當 Vercel 的專案名稱與 GitHub 的專案名稱不一樣時，可以使用此環境變數指定。
+`VERCEL_TEAM_ID` | `null` | Vercel 的 <a :href="withBase('/images/vercel-team-id.png')" target="_blank">team ID</a>。使用 Vercel 的 Pro 方案時，必須使用此環境變數指定。
 `VERCEL_ACCESS_TOKEN` | `null` | Vercel 的 <a :href="withBase('/images/vercel-access-token.png')" target="_blank">access token</a>，用來實現持久化儲存。
 `VERCEL_DEPLOY_HOOK_URL` | `null` | Vercel 的 <a :href="withBase('/images/vercel-deploy-hook-url.png')" target="_blank">deploy hook URL</a>，用來重新部署應用程式。
 `OPENAI_TIMEOUT` | `<APP_API_TIMEOUT>` | 呼叫 OpenAI API 的超時時間。
@@ -50,7 +51,7 @@ import { withBase } from '@vuepress/client'
 
 ## 重新部署
 
-每當環境變數有變更，就需要在 Vercel 平台點選「Redeploy」按鈕，以重新套用設定。
+每當環境變數有變更，就必須在 Vercel 平台點選「Redeploy」按鈕，以重新套用設定。
 
 <div align="center">
   <img :src="withBase('/images/vercel-redeploy.png')" width="600"/>
