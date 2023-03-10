@@ -89,7 +89,7 @@ LINE_CHANNEL_SECRET=<your_line_channel_secret>
 npm run dev
 ```
 
-啟動一個代理伺服器。
+開啟另一個終端機，啟動一個代理伺服器。
 
 ```bash
 ngrok http 3000
