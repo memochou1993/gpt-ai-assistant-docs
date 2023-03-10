@@ -84,7 +84,7 @@ GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語�
 
 ::: tip 訣竅：
 
-- 在 Vercel 平台檢查專案名稱是否與 GitHub 專案名稱一致。
+- 在 Vercel 平台檢查專案名稱是否與 GitHub 專案名稱一致，不一致時必須使用 `VERCEL_PROJECT_NAME` 指定。
 - 在 Vercel 平台檢查 `LINE_CHANNEL_ACCESS_TOKEN` 環境變數是否填寫正確。
 :::
 
@@ -133,6 +133,25 @@ GPT AI Assistant 在 `4.0.0` 以後的版本，預設使用 `gpt-3.5-turbo` 語�
 ::: tip 訣竅：
 
 - 過一陣子再傳送訊息。
+:::
+
+## 為什麼 Vercel 平台中出現 500 錯誤？
+
+在 Vercel 平台，出現「500 Internal Server Error」的錯誤，代表 Vercel 相關的環境變數不正確。
+
+::: tip 訣竅：
+
+- 在 Vercel 平台檢查專案名稱是否與 GitHub 專案名稱一致，不一致時必須使用 `VERCEL_PROJECT_NAME` 指定。
+:::
+
+## 為什麼 Vercel 平台中出現 504 錯誤？
+
+在 Vercel 平台，出現「504 Gateway Timeout」的錯誤，代表 AI 的處理時間太久，無法取得回應。
+
+::: tip 訣竅：
+
+- 訂閱 Vercel 的付費方案，並在 Vercel 平台新增 `VERCEL_TEAM_ID` 環境變數。
+- 使用虛擬專用伺服器進行部署。
 :::
 
 ## 為什麼 AI 回覆的日期是錯的？
