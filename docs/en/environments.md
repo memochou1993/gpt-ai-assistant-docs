@@ -11,7 +11,7 @@ Name | Default Value | Description
 `APP_DEBUG` | `false` | Print prompt to console. The value must be `true` of `false`.
 `APP_WEBHOOK_PATH` | `/webhook` | Custom webhook path.
 `APP_API_TIMEOUT` | `9000` | Timeout for API calls.
-`APP_LANG` | `zh` | Application language. The value must be one of `zh`, `en` or `ja`.
+`APP_LANG` | `zh` | Application language. The value must be one of `zh_TW`, `zh_CN`, `en` or `ja`.
 `APP_MAX_GROUPS` | `1` | Maximum groups. The `VERCEL_ACCESS_TOKEN` environment variable is required.
 `APP_MAX_USERS` | `5` | Maximum users. The `VERCEL_ACCESS_TOKEN` environment variable is required.
 `APP_MAX_PROMPT_MESSAGES` | `12` | Maximum prompt sentences.

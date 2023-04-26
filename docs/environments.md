@@ -15,7 +15,7 @@ import { withBase } from '@vuepress/client'
 `APP_DEBUG` | `false` | 是否在標準輸出印出訊息，值必須為 `true` 或 `false`。
 `APP_WEBHOOK_PATH` | `/webhook` | 應用程式的 webhook URL 路徑。
 `APP_API_TIMEOUT` | `9000` | 呼叫外部服務 API 的超時時間。
-`APP_LANG` | `zh` | 程式的初始語言，值必須為 `zh`、`en` 或 `ja`。
+`APP_LANG` | `zh` | 程式的初始語言，值必須為 `zh_TW`、`zh_CN`、`en` 或 `ja`。
 `APP_MAX_GROUPS` | `1` | 群組數量上限，必須設置 `VERCEL_ACCESS_TOKEN` 環境變數。
 `APP_MAX_USERS` | `5` | 用戶數量上限，必須設置 `VERCEL_ACCESS_TOKEN` 環境變數。
 `APP_MAX_PROMPT_MESSAGES` | `12` | 上下文語句的數量上限。
