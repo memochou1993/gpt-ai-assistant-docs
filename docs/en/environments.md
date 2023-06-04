@@ -31,6 +31,7 @@ Name | Default Value | Description
 `VERCEL_DEPLOY_HOOK_URL` | `null` | Vercel <a :href="withBase('/images/vercel-deploy-hook-url.png')" target="_blank">deploy hook URL</a>
 `OPENAI_TIMEOUT` | `<APP_API_TIMEOUT>` | Timeout for OpenAI API calls.
 `OPENAI_API_KEY` | `null` | OpenAI <a :href="withBase('/images/openai-api-key.png')" target="_blank">API key</a>
+`OPENAI_BASE_URL` | `https://api.openai.com` | OpenAI API Endpoint.
 `OPENAI_COMPLETION_MODEL` | `gpt-3.5-turbo` | Refer to [model](https://beta.openai.com/docs/api-reference/completions/create#completions/create-model) parameter for details.
 `OPENAI_COMPLETION_TEMPERATURE` | `0.9` | Refer to [temperature](https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature) parameter for details.
 `OPENAI_COMPLETION_MAX_TOKENS` | `160` | Refer to [max_tokens](https://beta.openai.com/docs/api-reference/completions/create#completions/create-max_tokens) parameter for details.

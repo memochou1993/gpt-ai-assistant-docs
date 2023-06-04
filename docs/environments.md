@@ -35,6 +35,7 @@ import { withBase } from '@vuepress/client'
 `VERCEL_DEPLOY_HOOK_URL` | `null` | Vercel 的 <a :href="withBase('/images/vercel-deploy-hook-url.png')" target="_blank">deploy hook URL</a>，用來重新部署應用程式。
 `OPENAI_TIMEOUT` | `<APP_API_TIMEOUT>` | 呼叫 OpenAI API 的超時時間。
 `OPENAI_API_KEY` | `null` | OpenAI 的 <a :href="withBase('/images/openai-api-key.png')" target="_blank">API key</a>，用來實現與 AI 對話。
+`OPENAI_BASE_URL` | `https://api.openai.com` | OpenAI 的 API 端點。
 `OPENAI_COMPLETION_MODEL` | `gpt-3.5-turbo` | 詳見 [model](https://beta.openai.com/docs/api-reference/completions/create#completions/create-model) 參數說明。
 `OPENAI_COMPLETION_TEMPERATURE` | `0.9` | 詳見 [temperature](https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature) 參數說明。
 `OPENAI_COMPLETION_MAX_TOKENS` | `160` | 詳見 [max_tokens](https://beta.openai.com/docs/api-reference/completions/create#completions/create-max_tokens) 參數說明。
