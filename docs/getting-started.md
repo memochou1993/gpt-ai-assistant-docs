@@ -20,6 +20,7 @@ import { withBase } from '@vuepress/client'
 - 「[如何創建類似 ChatGPT 的 Line Bot 聊天機器人！](https://www.youtube.com/watch?v=uHsCou1AfEU)」by [程式猿](https://www.youtube.com/@appfromape)
 - 「[真的是 ChatGPT！GPT AI Assistant 4.0 聊天機器人升級版！](https://www.youtube.com/watch?v=77ggAZPy0mI)」by [程式猿](https://www.youtube.com/@appfromape)
 - 「[快速建立 AI + LINE Bot 聊天機器人](https://www.youtube.com/watch?v=D8b1WrmXgUE)」by [國立臺中教育大學數位內容科技學系吳智鴻教授](https://www.youtube.com/@profchwu)
+- 「[快速建立 AI 聊天機器人 ChatGPT + LINE Bot 串接](https://www.youtube.com/watch?v=cKUNwqddBUM)」by [阿布吉旅遊生活頻道](https://www.youtube.com/@AndyLiang)
 
 ## 圖文教學
 
