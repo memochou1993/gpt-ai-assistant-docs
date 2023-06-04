@@ -26,7 +26,8 @@ import { withBase } from '@vuepress/client'
 
 適合一般人，大約可以在 20 至 30 分鐘完成安裝。
 
-- 「[ChatGPT LINE 機器人創建教學，教你打造個人專屬 LINE AI 助理隨時都能聊](https://mrmad.com.tw/chatgpt-line-robot-creation-teaching)」 by [瘋先生](https://mrmad.com.tw/)
+- 「[ChatGPT LINE 機器人創建教學，教你打造個人專屬 LINE AI 助理隨時都能聊](https://mrmad.com.tw/chatgpt-line-robot-creation-teaching)」by [瘋先生](https://mrmad.com.tw/)
+- 「[LINE 專屬 AI 助理來了！使用 ChatGPT 讓你享受更智能的聊天體驗](https://www.lccnet.com.tw/lccnet/article/details/2246)」by 意如
 
 ## 文字教學
 
