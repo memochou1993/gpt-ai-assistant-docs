@@ -37,6 +37,7 @@ Name | Default Value | Description
 `OPENAI_COMPLETION_MAX_TOKENS` | `160` | Refer to [max_tokens](https://beta.openai.com/docs/api-reference/completions/create#completions/create-max_tokens) parameter for details.
 `OPENAI_COMPLETION_FREQUENCY_PENALTY` | `0` | Refer to [frequency_penalty](https://beta.openai.com/docs/api-reference/completions/create#completions/create-frequency_penalty) parameter for details.
 `OPENAI_COMPLETION_PRESENCE_PENALTY` | `0.6` | Refer to [presence_penalty](https://beta.openai.com/docs/api-reference/completions/create#completions/create-presence_penalty) parameter for details.
+`OPENAI_COMPLETION_STOP_SEQUENCES` | `assistant:,user:` | Refer to [stop](https://platform.openai.com/docs/api-reference/completions/create#completions/create-stop) parameter for details.
 `OPENAI_IMAGE_GENERATION_SIZE` | `256x256` | Refer to [size](https://beta.openai.com/docs/api-reference/images/create#images/create-size) parameter for details.
 `LINE_TIMEOUT` | `<APP_API_TIMEOUT>` | Timeout for LINE Messaging API calls.
 `LINE_CHANNEL_ACCESS_TOKEN` | `null` | LINE <a :href="withBase('/images/line-channel-access-token.png')" target="_blank">channel access token</a>

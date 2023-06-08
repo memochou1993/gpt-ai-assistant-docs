@@ -41,6 +41,7 @@ import { withBase } from '@vuepress/client'
 `OPENAI_COMPLETION_MAX_TOKENS` | `160` | 詳見 [max_tokens](https://beta.openai.com/docs/api-reference/completions/create#completions/create-max_tokens) 參數說明。
 `OPENAI_COMPLETION_FREQUENCY_PENALTY` | `0` | 詳見 [frequency_penalty](https://beta.openai.com/docs/api-reference/completions/create#completions/create-frequency_penalty) 參數說明。
 `OPENAI_COMPLETION_PRESENCE_PENALTY` | `0.6` | 詳見 [presence_penalty](https://beta.openai.com/docs/api-reference/completions/create#completions/create-presence_penalty) 參數說明。
+`OPENAI_COMPLETION_STOP_SEQUENCES` | `assistant:,user:` | 詳見 [stop](https://platform.openai.com/docs/api-reference/completions/create#completions/create-stop) 參數說明。
 `OPENAI_IMAGE_GENERATION_SIZE` | `256x256` | 詳見 [size](https://beta.openai.com/docs/api-reference/images/create#images/create-size) 參數說明。
 `LINE_TIMEOUT` | `<APP_API_TIMEOUT>` | 呼叫 LINE Messaging API 的超時時間。
 `LINE_CHANNEL_ACCESS_TOKEN` | `null` | LINE 的 <a :href="withBase('/images/line-channel-access-token.png')" target="_blank">channel access token</a>，用來傳送訊息。
