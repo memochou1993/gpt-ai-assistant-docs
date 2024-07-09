@@ -32,13 +32,15 @@ Name | Default Value | Description
 `OPENAI_TIMEOUT` | `<APP_API_TIMEOUT>` | Timeout for OpenAI API calls.
 `OPENAI_API_KEY` | `null` | OpenAI <a :href="withBase('/images/openai-api-key.png')" target="_blank">API key</a>
 `OPENAI_BASE_URL` | `https://api.openai.com` | OpenAI API Endpoint.
-`OPENAI_COMPLETION_MODEL` | `gpt-3.5-turbo` | Refer to [model](https://beta.openai.com/docs/api-reference/completions/create#completions/create-model) parameter for details.
-`OPENAI_COMPLETION_TEMPERATURE` | `0.9` | Refer to [temperature](https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature) parameter for details.
-`OPENAI_COMPLETION_MAX_TOKENS` | `160` | Refer to [max_tokens](https://beta.openai.com/docs/api-reference/completions/create#completions/create-max_tokens) parameter for details.
-`OPENAI_COMPLETION_FREQUENCY_PENALTY` | `0` | Refer to [frequency_penalty](https://beta.openai.com/docs/api-reference/completions/create#completions/create-frequency_penalty) parameter for details.
-`OPENAI_COMPLETION_PRESENCE_PENALTY` | `0.6` | Refer to [presence_penalty](https://beta.openai.com/docs/api-reference/completions/create#completions/create-presence_penalty) parameter for details.
-`OPENAI_COMPLETION_STOP_SEQUENCES` | `assistant:,user:` | Refer to [stop](https://platform.openai.com/docs/api-reference/completions/create#completions/create-stop) parameter for details.
-`OPENAI_IMAGE_GENERATION_SIZE` | `256x256` | Refer to [size](https://beta.openai.com/docs/api-reference/images/create#images/create-size) parameter for details.
+`OPENAI_COMPLETION_MODEL` | `gpt-3.5-turbo` | Refer to [model](https://platform.openai.com/docs/api-reference/chat/create#chat-create-model) parameter for details.
+`OPENAI_COMPLETION_TEMPERATURE` | `0.9` | Refer to [temperature](https://platform.openai.com/docs/api-reference/chat/create#chat-create-temperature) parameter for details.
+`OPENAI_COMPLETION_MAX_TOKENS` | `160` | Refer to [max_tokens](https://platform.openai.com/docs/api-reference/chat/create#chat-create-max_tokens) parameter for details.
+`OPENAI_COMPLETION_FREQUENCY_PENALTY` | `0` | Refer to [frequency_penalty](https://platform.openai.com/docs/api-reference/chat/create#chat-create-frequency_penalty) parameter for details.
+`OPENAI_COMPLETION_PRESENCE_PENALTY` | `0.6` | Refer to [presence_penalty](https://platform.openai.com/docs/api-reference/chat/create#chat-create-presence_penalty) parameter for details.
+`OPENAI_COMPLETION_STOP_SEQUENCES` | `assistant:,user:` | Refer to [stop](https://platform.openai.com/docs/api-reference/chat/create#chat-create-stop) parameter for details.
+`OPENAI_IMAGE_GENERATION_MODEL` | `dall-e-2` | Refer to [model](https://platform.openai.com/docs/api-reference/images/create#images-create-model) parameter for details.
+`OPENAI_IMAGE_GENERATION_SIZE` | `256x256` | Refer to [size](https://platform.openai.com/docs/api-reference/images/create#images-create-size) parameter for details.
+`OPENAI_IMAGE_GENERATION_QUALITY` | `standard` | Refer to [quality](https://platform.openai.com/docs/api-reference/images/create#images-create-quality) parameter for details.
 `LINE_TIMEOUT` | `<APP_API_TIMEOUT>` | Timeout for LINE Messaging API calls.
 `LINE_CHANNEL_ACCESS_TOKEN` | `null` | LINE <a :href="withBase('/images/line-channel-access-token.png')" target="_blank">channel access token</a>
 `LINE_CHANNEL_SECRET` | `null` | LINE <a :href="withBase('/images/line-channel-secret.png')" target="_blank">channel secret</a>

@@ -36,13 +36,15 @@ import { withBase } from '@vuepress/client'
 `OPENAI_TIMEOUT` | `<APP_API_TIMEOUT>` | 呼叫 OpenAI API 的超時時間。
 `OPENAI_API_KEY` | `null` | OpenAI 的 <a :href="withBase('/images/openai-api-key.png')" target="_blank">API key</a>，用來實現與 AI 對話。
 `OPENAI_BASE_URL` | `https://api.openai.com` | OpenAI 的 API 端點。
-`OPENAI_COMPLETION_MODEL` | `gpt-3.5-turbo` | 詳見 [model](https://beta.openai.com/docs/api-reference/completions/create#completions/create-model) 參數說明。
-`OPENAI_COMPLETION_TEMPERATURE` | `0.9` | 詳見 [temperature](https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature) 參數說明。
-`OPENAI_COMPLETION_MAX_TOKENS` | `160` | 詳見 [max_tokens](https://beta.openai.com/docs/api-reference/completions/create#completions/create-max_tokens) 參數說明。
-`OPENAI_COMPLETION_FREQUENCY_PENALTY` | `0` | 詳見 [frequency_penalty](https://beta.openai.com/docs/api-reference/completions/create#completions/create-frequency_penalty) 參數說明。
-`OPENAI_COMPLETION_PRESENCE_PENALTY` | `0.6` | 詳見 [presence_penalty](https://beta.openai.com/docs/api-reference/completions/create#completions/create-presence_penalty) 參數說明。
-`OPENAI_COMPLETION_STOP_SEQUENCES` | `assistant:,user:` | 詳見 [stop](https://platform.openai.com/docs/api-reference/completions/create#completions/create-stop) 參數說明。
-`OPENAI_IMAGE_GENERATION_SIZE` | `256x256` | 詳見 [size](https://beta.openai.com/docs/api-reference/images/create#images/create-size) 參數說明。
+`OPENAI_COMPLETION_MODEL` | `gpt-3.5-turbo` | 詳見 [model](https://platform.openai.com/docs/api-reference/chat/create#chat-create-model) 參數說明。
+`OPENAI_COMPLETION_TEMPERATURE` | `0.9` | 詳見 [temperature](https://platform.openai.com/docs/api-reference/chat/create#chat-create-temperature) 參數說明。
+`OPENAI_COMPLETION_MAX_TOKENS` | `160` | 詳見 [max_tokens](https://platform.openai.com/docs/api-reference/chat/create#chat-create-max_tokens) 參數說明。
+`OPENAI_COMPLETION_FREQUENCY_PENALTY` | `0` | 詳見 [frequency_penalty](https://platform.openai.com/docs/api-reference/chat/create#chat-create-frequency_penalty) 參數說明。
+`OPENAI_COMPLETION_PRESENCE_PENALTY` | `0.6` | 詳見 [presence_penalty](https://platform.openai.com/docs/api-reference/chat/create#chat-create-presence_penalty) 參數說明。
+`OPENAI_COMPLETION_STOP_SEQUENCES` | `assistant:,user:` | 詳見 [stop](https://platform.openai.com/docs/api-reference/chat/create#chat-create-stop) 參數說明。
+`OPENAI_IMAGE_GENERATION_MODEL` | `dall-e-2` | 詳見 [model](https://platform.openai.com/docs/api-reference/images/create#images-create-model) 參數說明。
+`OPENAI_IMAGE_GENERATION_SIZE` | `256x256` | 詳見 [size](https://platform.openai.com/docs/api-reference/images/create#images-create-size) 參數說明。
+`OPENAI_IMAGE_GENERATION_QUALITY` | `standard` | 詳見 [quality](https://platform.openai.com/docs/api-reference/images/create#images-create-quality) 參數說明。
 `LINE_TIMEOUT` | `<APP_API_TIMEOUT>` | 呼叫 LINE Messaging API 的超時時間。
 `LINE_CHANNEL_ACCESS_TOKEN` | `null` | LINE 的 <a :href="withBase('/images/line-channel-access-token.png')" target="_blank">channel access token</a>，用來傳送訊息。
 `LINE_CHANNEL_SECRET` | `null` | LINE 的 <a :href="withBase('/images/line-channel-secret.png')" target="_blank">channel secret</a>，用來驗證訊息來源。
