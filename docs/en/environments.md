@@ -46,7 +46,7 @@ Name | Default Value | Description
 `LINE_CHANNEL_SECRET` | `null` | LINE <a :href="withBase('/images/line-channel-secret.png')" target="_blank">channel secret</a>
 `SERPAPI_TIMEOUT` | `<APP_API_TIMEOUT>` | Timeout for SerpApi API calls.
 `SERPAPI_API_KEY` | `null` | SerpApi <a :href="withBase('/images/serpapi-api-key.png')" target="_blank">API key</a>
-`SERPAPI_LOCATION` | `Taiwan` | Location of search。
+`SERPAPI_LOCATION` | `tw` | Location of search。
 `SERPAPI_LANG` | `lang_zh-TW` | Language of search。
 
 Click the "Redeploy" button to redeploy if there are any changes.
