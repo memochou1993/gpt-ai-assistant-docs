@@ -50,7 +50,7 @@ import { withBase } from '@vuepress/client'
 `LINE_CHANNEL_SECRET` | `null` | LINE 的 <a :href="withBase('/images/line-channel-secret.png')" target="_blank">channel secret</a>，用來驗證訊息來源。
 `SERPAPI_TIMEOUT` | `<APP_API_TIMEOUT>` | 呼叫 SerpApi API 的超時時間。
 `SERPAPI_API_KEY` | `null` | SerpApi 的 <a :href="withBase('/images/serpapi-api-key.png')" target="_blank">API key</a>，用來查詢 Google 資料。
-`SERPAPI_LOCATION` | `Taiwan` | 查詢 Google 資料時，使用的地區。
+`SERPAPI_LOCATION` | `tw` | 查詢 Google 資料時，使用的地區。
 `SERPAPI_LANG` | `lang_zh-TW` | 查詢 Google 資料時，使用的語言。
 
 ## 重新部署
